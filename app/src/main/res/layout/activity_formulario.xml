@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    tools:context=".Login"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:gravity="left"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:text="Registro de usuario"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_usuario"
+            tools:layout_editor_absoluteX="140dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="nombre"
+            app:layout_constraintBottom_toTopOf="@+id/txt_contrasena"
+            tools:layout_editor_absoluteX="172dp" />
+
+        <EditText
+            android:id="@+id/txt_apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="apellido"
+            app:layout_constraintBottom_toTopOf="@+id/txt_contrasena"
+            tools:layout_editor_absoluteX="172dp" />
+
+        <EditText
+            android:id="@+id/txt_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="telefono"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txt_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="edad"
+            android:inputType="number" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txt_lugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Lugar de nacimiento:"
+                app:layout_constraintBottom_toTopOf="@+id/txt_usuario"
+                tools:layout_editor_absoluteX="140dp" />
+            <Spinner
+                android:id="@+id/sp_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txt_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="correo"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/txt_contrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="password"
+            tools:layout_editor_absoluteX="172dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_calendar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:drawableLeft="@mipmap/calendar"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/txt_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fecha de nacimiento"
+                android:inputType="textPersonName"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/txt_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                 />
+
+            <RadioButton
+                android:id="@+id/btn_masculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/btn_femenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:layout_marginRight="40dp"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="391dp" />
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="391dp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
