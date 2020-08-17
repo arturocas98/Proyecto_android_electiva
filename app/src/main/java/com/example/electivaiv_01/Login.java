@@ -65,6 +65,11 @@ public class Login extends AppCompatActivity {
             case R.id.salir :
                 Toast.makeText(this,"Cerrando sesión espere un momento ....",Toast.LENGTH_SHORT).show();
                 return true;
+
+            case R.id.acerca_de:
+                Intent i = new Intent(Login.this,acerca_de.class);
+                startActivityForResult(i,0);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
