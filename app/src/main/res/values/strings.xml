@@ -5,4 +5,6 @@
     <string name="contacto"> Contacto</string>
     <string name="acerca_de"> Acerca de </string>
     <string name="salir"> Salir </string>
+    <string name="eliminar"> Eliminar </string>
+    <string name="actualizar"> Actualizar </string>
 </resources>

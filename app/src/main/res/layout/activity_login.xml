@@ -27,7 +27,20 @@
             android:textSize="30dp"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toTopOf="@+id/txt_usuario"
-            tools:layout_editor_absoluteX="140dp" />
+            tools:layout_editor_absoluteX="140dp"
+
+            />
+
+        <!--<TextView
+            android:id="@+id/txt_prueba1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="usuario"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_usuario"
+            tools:layout_editor_absoluteX="140dp" />-->
 
 
 
@@ -43,20 +56,19 @@
         android:padding="10dp"
         >
         <EditText
-            android:id="@+id/txt_usuario"
+            android:id="@+id/txt_login_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="usuario"
-            app:layout_constraintBottom_toTopOf="@+id/txt_contrasena"
             tools:layout_editor_absoluteX="172dp" />
 
 
 
         <EditText
-            android:id="@+id/txt_contrasena"
+            android:id="@+id/txt_login_contra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -81,8 +93,9 @@
             android:id="@+id/btn_ingresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingresar"
             android:layout_marginRight="30dp"
+            android:onClick="onClick"
+            android:text="Ingresar"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="391dp" />
 
@@ -90,6 +103,7 @@
             android:id="@+id/btn_nuevo_usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="Nuevo usuario"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="391dp" />
