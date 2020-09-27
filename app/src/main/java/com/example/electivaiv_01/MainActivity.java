@@ -19,6 +19,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText txt_usuario;
     EditText txt_contrasena;
+    Button btn_call;
     public int score = 0;
     SharedPreferences sharedPreferences;
     public Preguntas[] pregunta_test = {
@@ -57,6 +58,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 score = score - 100;
                 txtpuntaje.setText(String.valueOf(score));
+            }
+        });
+
+        btn_call = (Button) findViewById(R.id.btn_call);
+        btn_call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,llamadas.class);
+                startActivityForResult(intent,0);
             }
         });
     }
